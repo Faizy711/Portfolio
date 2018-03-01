@@ -12,29 +12,119 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div id="app" class="container-fluid">
         <!-- loader -->
         <div id="loader-wrapper" class="row">
             <div id="loader" class="col-m-12">
-                <h1 class="text-center baffle-longer fittext-h1 flow-text guard-text allcaps" style="font-size: 50px;">
+                <h1 class="text-center baffle-longer allcaps" style="font-size: 50px;">
                     Faizan Salman
                 </h1>
             </div>
+            <div id="loader-section"></div>
         </div>
 
         <!-- HomePage -->
-        
+        <section id="homepage" class="row">
+            <div class="portfolio-toggle-container col-m-4 col-lg-4 col-sm-12">
+                <a href="#" class="portfolio-toggle text-center" style="font-size: 35px">
+                    <div class="stage">
+                        <div class="layer1"></div>
+                        <div class="layer1"></div>
+                        <div class="layer1"></div>
+                        <div class="layer1"></div>
+                        <div class="layer1"></div>
+                        <div class="layer1"></div>
+                        <div class="layer1"></div>
+                        <div class="layer1"></div>
+                        <div class="layer1"></div>
+                        <div class="layer1"></div>
+                        <div class="layer1"></div>
+                        <div class="layer1"></div>
+                        <div class="layer1"></div>
+                        <div class="layer1"></div>
+                        <div class="layer1"></div>
+                        <div class="layer1"></div>
+                        <div class="layer1"></div>
+                        <div class="layer1"></div>
+                        <div class="layer1"></div>
+                        <div class="layer1"></div>
+                    </div>
+                </a>
+            </div>
+            <div class="about-toggle-container col-m-4 col-lg-4 col-sm-12">
+                <a href="#" class="about-toggle text-center" style="font-size: 35px">
+                    <div class="stage">
+                        <div class="layer2"></div>
+                        <div class="layer2"></div>
+                        <div class="layer2"></div>
+                        <div class="layer2"></div>
+                        <div class="layer2"></div>
+                        <div class="layer2"></div>
+                        <div class="layer2"></div>
+                        <div class="layer2"></div>
+                        <div class="layer2"></div>
+                        <div class="layer2"></div>
+                        <div class="layer2"></div>
+                        <div class="layer2"></div>
+                        <div class="layer2"></div>
+                        <div class="layer2"></div>
+                        <div class="layer2"></div>
+                        <div class="layer2"></div>
+                        <div class="layer2"></div>
+                        <div class="layer2"></div>
+                        <div class="layer2"></div>
+                        <div class="layer2"></div>
+                    </div>
+                </a>
+            </div>
+            <div class="contact-toggle-container col-m-4 col-lg-4 col-sm-12">
+                <a href="#" class="contact-toggle text-center" style="font-size: 35px">
+                        <div class="stage">
+                                <div class="layer3"></div>
+                                <div class="layer3"></div>
+                                <div class="layer3"></div>
+                                <div class="layer3"></div>
+                                <div class="layer3"></div>
+                                <div class="layer3"></div>
+                                <div class="layer3"></div>
+                                <div class="layer3"></div>
+                                <div class="layer3"></div>
+                                <div class="layer3"></div>
+                                <div class="layer3"></div>
+                                <div class="layer3"></div>
+                                <div class="layer3"></div>
+                                <div class="layer3"></div>
+                                <div class="layer3"></div>
+                                <div class="layer3"></div>
+                                <div class="layer3"></div>
+                                <div class="layer3"></div>
+                                <div class="layer3"></div>
+                                <div class="layer3"></div>
+                            </div>
+                </a>
+            </div>
+        </section>
 
 
     </div>
 
     <!-- Bootstrap Javascript -->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <!-- Source Script -->
     <script src="assets/js/javascript.js"></script>
     <script src="assets/js/baffle.js"></script>
+    <script>
+            $(document).ready(function() {
+                setTimeout(function() {
+                    $('body').addClass('loaded');
+                }, 5000);
+            });
+                
+    </script>
 
 </body>
 
