@@ -16,9 +16,7 @@
         <!-- loader -->
         <div id="loader-wrapper" class="row">
             <div id="loader" class="col-m-12">
-                <h1 class="text-center baffle-longer allcaps" style="font-size: 50px;">
-                    Faizan Salman
-                </h1>
+                <h1 class="text-center baffle-longer allcaps" style="font-size: 50px;">Faizan Salman</h1>
             </div>
             <div id="loader-section"></div>
         </div>
@@ -109,13 +107,15 @@
         <section id="portfolio-container">
             <div class="portfolio-content row">
                 <div id="list-example" class="list-group col-md-3">
+                    <h2 id="funny-header2"></h2>
+                    <br>
                     <a class="list-group-item list-group-item-action" href="#list-item-1">CJ's Travels</a>
                     <a class="list-group-item list-group-item-action" href="#list-item-2">Nintendo Hangman</a>
                     <a class="list-group-item list-group-item-action" href="#list-item-3">Bookmark Extension</a>
                     <a class="list-group-item list-group-item-action" href="#list-item-4">Ruby or Banana</a>
                 </div>
                 <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example col-md-7">
-                    <h4 id="list-item-1" class="portfolio_header">CJ's Travel</h4>
+                    <h3 id="list-item-1" class="portfolio_header">CJ's Travel</h3>
                     <p>CJ's Travels is a site providing you with a glimpse into the best offerings a US city has to offer. Providing
                         you with cultural attractions, maps, trending news, dinning, weather and more!</p>
                     <p>This was the first project I worked on at the Northwestern Coding Bootcamp. Learning html, javascript,
@@ -125,8 +125,9 @@
                         like to work in a dev enviornment with a small team. For more information about the project you can
                         visit the github repository link below!</p>
                     <a href="https://github.com/kmatchu/Trip-tips-Project-1" target="_blank">Github repo</a>
-                    </br>
-                    <h4 id="list-item-2 portfolio_header">Hangman Game</h4>
+                    <br>
+                    <br>
+                    <h3 id="list-item-2" class="portfolio_header">Hangman Game</h3>
                     <p>The Nintendo Hangman game is a simple hangman web page game. Guess your favorite Nintendo characters
                         and hear captain falcon cheer you on or Jigglypuff get dissapointed.</p>
                     <p>This is a fun little wep page game I made to understand more about programming a web page. I also took
@@ -135,8 +136,9 @@
                         my github repo for more infor or the game link if you want to just play.</p>
                     <a href="https://github.com/Faizy711/Hangman-Game" target="_blank">Github repo</a>
                     <a href="https://faizy711.github.io/Hangman-Game/" target="_blank">Nintendo Hangman</a>
-                    </br>
-                    <h4 id="list-item-3 portfolio_header">Bookmark Extension</h4>
+                    <br>
+                    <br>
+                    <h3 id="list-item-3" class="portfolio_header">Bookmark Extension</h3>
                     <p>Bookmark Extension is an application that makes a database copy of your Google Chrome bookmarks and organizes
                         them in a personal library. From the library you can search for a Bookmark by its title, access a
                         bookmark's web page, create folders, assign the folders to bookmarks and sort them accordingly.</p>
@@ -146,7 +148,8 @@
                     </p>
                     <a href="https://github.com/eogiesoba/Bookmark_App_rep" target="_blank">Bookmark Extension</a>
                     </br>
-                    <h4 id="list-item-4 portfolio_header">Ruby or Banana</h4>
+                    <br>
+                    <h3 id="list-item-4" class="portfolio_header">Ruby or Banana</h3>
                     <p>Ruby or Banana? Click on the rubies or bananas to add to your score. If you can reach the target score
                         exactly you win, and if you can you lose. This is a simple web page game I made to understand sprites,
                         javascript, and css better. It was good practice in creating my own web page and I came up with the
@@ -412,6 +415,23 @@
     
                 } else if (example.length == i) { // Loop
                     textSequence(0);
+                }
+    
+            }
+
+            var example2 = ['(๑ˇεˇ๑)•*¨*•.¸¸♪', 'ヽ(*´з｀*)ﾉ¸¸.•*¨*•♬', '(˳˘ ɜ˘)˳ ♬♪♫', '(˘ε ˘˳)˳ ♬♪♫'];
+
+            textSequence2(0);
+            function textSequence2(i) {
+    
+                if (example2.length > i) {
+                    setTimeout(function() {
+                        document.getElementById("funny-header2").innerHTML = example2[i];
+                        textSequence2(++i);
+                    }, 500); // 1 second (in milliseconds)
+    
+                } else if (example.length == i) { // Loop
+                    textSequence2(0);
                 }
     
             }
