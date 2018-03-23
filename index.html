@@ -26,7 +26,7 @@
         <!-- HomePage -->
         <section id="homepage" class="row">
             <div class="portfolio-toggle-container col-m-4 col-lg-4 col-sm-12">
-                <a href="#" class="portfolio-toggle text-center" style="font-size: 35px">
+                <a href="#" class="portfolio-toggle text-center" id="Portfolio" style="font-size: 35px">
                     <div class="stage">
                         <div class="layer1"></div>
                         <div class="layer1"></div>
@@ -52,7 +52,7 @@
                 </a>
             </div>
             <div class="about-toggle-container col-m-4 col-lg-4 col-sm-12">
-                <a href="#" class="about-toggle text-center" style="font-size: 35px">
+                <a href="#" class="about-toggle text-center" id="About" style="font-size: 35px">
                     <div class="stage">
                         <div class="layer2"></div>
                         <div class="layer2"></div>
@@ -78,30 +78,171 @@
                 </a>
             </div>
             <div class="contact-toggle-container col-m-4 col-lg-4 col-sm-12">
-                <a href="#" class="contact-toggle text-center" style="font-size: 35px">
-                        <div class="stage">
-                                <div class="layer3"></div>
-                                <div class="layer3"></div>
-                                <div class="layer3"></div>
-                                <div class="layer3"></div>
-                                <div class="layer3"></div>
-                                <div class="layer3"></div>
-                                <div class="layer3"></div>
-                                <div class="layer3"></div>
-                                <div class="layer3"></div>
-                                <div class="layer3"></div>
-                                <div class="layer3"></div>
-                                <div class="layer3"></div>
-                                <div class="layer3"></div>
-                                <div class="layer3"></div>
-                                <div class="layer3"></div>
-                                <div class="layer3"></div>
-                                <div class="layer3"></div>
-                                <div class="layer3"></div>
-                                <div class="layer3"></div>
-                                <div class="layer3"></div>
-                            </div>
+                <a href="#" class="contact-toggle text-center" id="Contact" style="font-size: 35px">
+                    <div class="stage">
+                        <div class="layer3"></div>
+                        <div class="layer3"></div>
+                        <div class="layer3"></div>
+                        <div class="layer3"></div>
+                        <div class="layer3"></div>
+                        <div class="layer3"></div>
+                        <div class="layer3"></div>
+                        <div class="layer3"></div>
+                        <div class="layer3"></div>
+                        <div class="layer3"></div>
+                        <div class="layer3"></div>
+                        <div class="layer3"></div>
+                        <div class="layer3"></div>
+                        <div class="layer3"></div>
+                        <div class="layer3"></div>
+                        <div class="layer3"></div>
+                        <div class="layer3"></div>
+                        <div class="layer3"></div>
+                        <div class="layer3"></div>
+                        <div class="layer3"></div>
+                    </div>
                 </a>
+            </div>
+        </section>
+
+        <!-- Portfolio, About, Contact Section -->
+        <section id="portfolio-container">
+            <div class="portfolio-content row">
+                <div id="list-example" class="list-group col-md-3">
+                    <a class="list-group-item list-group-item-action" href="#list-item-1">CJ's Travels</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-2">Nintendo Hangman</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-3">Bookmark Extension</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-4">Ruby or Banana</a>
+                </div>
+                <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example col-md-7">
+                    <h4 id="list-item-1">CJ's Travel</h4>
+                    <p>CJ's Travels is a site providing you with a glimpse into the best offerings a US city has to offer. Providing
+                        you with cultural attractions, maps, trending news, dinning, weather and more!</p>
+                    <p>This was the first project I worked on at the Northwestern Coding Bootcamp. Learning html, javascript,
+                        and css we were able to use our skills to make a travel website. It was difficult to work with APIs
+                        but I luckily had great teammates and it was great working on code with a team for the first time.
+                        This was also one of my first github collaboration projects and I got to learn what it is really
+                        like to work in a dev enviornment with a small team. For more information about the project you can
+                        visit the github repository link below!</p>
+                    <a href="https://github.com/kmatchu/Trip-tips-Project-1" target="_blank">Github repo</a>
+                    <h4 id="list-item-2">Hangman Game</h4>
+                    <p>The Nintendo Hangman game is a simple hangman web page game. Guess your favorite Nintendo characters
+                        and hear captain falcon cheer you on or Jigglypuff get dissapointed.</p>
+                    <p>This is a fun little wep page game I made to understand more about programming a web page. I also took
+                        the liberty to try and play with some css animations in the background and also added music and sound
+                        effects. I had a lot of fun working on this if you would like to check it out you can either visit
+                        my github repo for more infor or the game link if you want to just play.</p>
+                    <a href="https://github.com/Faizy711/Hangman-Game" target="_blank">Github repo</a>
+                    <a href="https://faizy711.github.io/Hangman-Game/" target="_blank">Nintendo Hangman</a>
+                    <h4 id="list-item-3">Bookmark Extension</h4>
+                    <p>Bookmark Extension is an application that makes a database copy of your Google Chrome bookmarks and organizes
+                        them in a personal library. From the library you can search for a Bookmark by its title, access a
+                        bookmark's web page, create folders, assign the folders to bookmarks and sort them accordingly.</p>
+                    <p>This was the second project I worked on at the Northwestern Coding Bootcamp, it was one of my first projects
+                        that worked with a backend databse. We used sequelize, MySQL, express.js, node.js, and javascript
+                        mainly on this project. To learn more about the project or how to download it please visit the link:
+                    </p>
+                    <a href="https://github.com/eogiesoba/Bookmark_App_rep" target="_blank">Bookmark Extension</a>
+                    <h4 id="list-item-4">Ruby or Banana</h4>
+                    <p>Ruby or Banana? Click on the rubies or bananas to add to your score. If you can reach the target score
+                        exactly you win, and if you can you lose. This is a simple web page game I made to understand sprites,
+                        javascript, and css better. It was good practice in creating my own web page and I came up with the
+                        name due to the limited sprites I had available to me. It is silly but if you would like to play
+                        the game or find out more information please feel free to click on the links below.</p>
+                    <a href="https://github.com/Faizy711/Crystal_Game" target="_blank">Github repo</a>
+                    <a href="https://faizy711.github.io/Crystal_Game/" target="_blank">Ruby or Banan Game</a>
+                </div>
+                <div class="home-button col-md-2">
+                    <a href="#" class="home_button">X</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="about-container">
+            <div class="about-content row">
+                <div class="contact-title col-md-4">
+                    <div class="stage2">
+                        <div class="layer5"></div>
+                        <div class="layer5"></div>
+                        <div class="layer5"></div>
+                        <div class="layer5"></div>
+                        <div class="layer5"></div>
+                        <div class="layer5"></div>
+                        <div class="layer5"></div>
+                        <div class="layer5"></div>
+                        <div class="layer5"></div>
+                        <div class="layer5"></div>
+                        <div class="layer5"></div>
+                        <div class="layer5"></div>
+                        <div class="layer5"></div>
+                        <div class="layer5"></div>
+                        <div class="layer5"></div>
+                        <div class="layer5"></div>
+                        <div class="layer5"></div>
+                        <div class="layer5"></div>
+                        <div class="layer5"></div>
+                        <div class="layer5"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img id="profile" src="assets/img/12994406_10209209618978760_2604563978105641704_n.JPG" alt="img" style="width:270px;height:270px;">
+                    <p>Hi, I'm Faizan Salman. I am a recent graduate with a degree in Material Science & Engineering with a
+                        minor in Art & Design. I have experience with electronic based deviced and have experience in fabrication
+                        and research. I also have a small amount of design and photography experience, although I wish to
+                        improve in these aspects further. Currently I am working on improving my knowledge in coding and
+                        web development as a student at the Norwestern Coding Bootcamp. Welcome to my webpage!</p>
+                    <p>My hobbies include photography, music, and dancing. I like taking pictures outdoors or on a trip usually
+                        of random stuff or if something just looks funny or cool aesthetically. Recently I am trying to work
+                        on understanding film and poloroid cameras, but its cold af outside and nothing. If you wanna checkout
+                        my intagram:
+                        <a href="https://www.instagram.com/childofid/">www.instagram.com/childofid </a>, nothing too interesting on there. I use to breakdance but I don't
+                        really do that no more so dont ask, but if you wanna talk about breakdancing, dance, or hip-hop in
+                        general we can can prolly have a weird convo. I also like music so if you have any music suggestions
+                        I will listen to all of it. Anything with funky synths or involving the internet *ahem(memes) I'm
+                        all ears.</p>
+                </div>
+                <div class="home-button3 col-md-2">
+                    <a href="#" class="home_button3">X</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-container">
+            <div class="contact-content row">
+                <div class="contact-title col-md-4">
+                    <div class="stage2">
+                        <div class="layer4"></div>
+                        <div class="layer4"></div>
+                        <div class="layer4"></div>
+                        <div class="layer4"></div>
+                        <div class="layer4"></div>
+                        <div class="layer4"></div>
+                        <div class="layer4"></div>
+                        <div class="layer4"></div>
+                        <div class="layer4"></div>
+                        <div class="layer4"></div>
+                        <div class="layer4"></div>
+                        <div class="layer4"></div>
+                        <div class="layer4"></div>
+                        <div class="layer4"></div>
+                        <div class="layer4"></div>
+                        <div class="layer4"></div>
+                        <div class="layer4"></div>
+                        <div class="layer4"></div>
+                        <div class="layer4"></div>
+                        <div class="layer4"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <p>Something about contact info</p>
+                    <a href="#" target="_blank">Gmail</a>
+                    <a href="https://www.linkedin.com/in/faizan-salman-25b3b9156/" target="_blank">Linkedin</a>
+                    <a href="https://github.com/Faizy711" target="_blank">Github</a>
+                </div>
+                <div class="home-button3 col-md-2">
+                    <a href="#" class="home_button3">X</a>
+                </div>
             </div>
         </section>
 
@@ -118,12 +259,63 @@
     <script src="assets/js/javascript.js"></script>
     <script src="assets/js/baffle.js"></script>
     <script>
-            $(document).ready(function() {
-                setTimeout(function() {
-                    $('body').addClass('loaded');
-                }, 5000);
+        $(document).ready(function () {
+            $("#homepage").hide();
+            $("#portfolio-container").hide();
+            $("#about-container").hide();
+            $("#contact-container").hide();
+
+            setTimeout(function () {
+                $('body').addClass('loaded');
+                $('#loader').fadeOut();
+
+
+            }, 5000);
+            setTimeout(function () {
+
+                $("#homepage").fadeIn(3000);
+            }, 5000);
+
+            $(".home_button").click(() => {
+                $("#portfolio-container").fadeOut(1000);
+                $("#homepage").fadeIn(2000);
             });
+
+            $(".home_button2").click(() => {
+                $("#about-container").fadeOut(1000);
+                $("#homepage").fadeIn(2000);
+            });
+
+            $(".home_button3").click(() => {
+                $("#contact-container").fadeOut(1000);
+                $("#homepage").fadeIn(2000);
+            });
+
+            $("#Portfolio").click(() => {
+                $("#homepage").fadeOut(1000);
+                $("#portfolio-container").fadeIn(2000);
                 
+                $("#about-container").hide();
+                $("#contact-container").hide();
+            });
+
+            $("#About").click(() => {
+                $("#homepage").fadeOut(1000);
+                $("#about-container").fadeIn(2000);
+                
+                $("#portfolio-container").hide();
+                $("#contact-container").hide();
+            });
+
+            $("#Contact").click(() => {
+                $("#homepage").fadeOut(1000);
+                $("#contact-container").fadeIn(2000);
+                
+                $("#portfolio-container").hide();
+                $("#about-container").hide();
+            });
+        });
+
     </script>
 
 </body>
