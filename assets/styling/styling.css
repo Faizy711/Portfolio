@@ -1,22 +1,32 @@
 /* loader */
 
 body{
-    background-color: lightpink;
+    background-color: #ffb6c1;
 }
 section{
     position: relative;
 
 }
-.scrollspy-example{
+.scrollspy-example2{
     color: #666666;
-    margin-top: 10vh;
     padding-top: 15vh;
     padding-bottom:15vh;
     position: relative;
-    height: 75vh;
+    height: 100vh;
     overflow-y: scroll;
-    background-color: #eeee;
+    background-color: lightpink;
 }
+
+.scrollspy-example{
+  color: #666666;
+  position: relative;
+  padding-top: 2vh;
+  padding-bottom:15vh;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: lightpink;
+}
+
 #list-example{
     padding-top: 25vh;
     border-right: solid 1px blue;
@@ -210,10 +220,6 @@ a:hover{
 #profile{
     float: left;
     margin: 10px;
-}
-
-.profile_page{
-    padding-top:10vh;
 }
 
 #funny-header{
@@ -959,6 +965,22 @@ a:hover{
     100% {
       transform: rotateY(-40deg) rotateX(-43deg);
     }
+  }
+
+  #logo_link{
+    color: lightpink;
+  }
+
+  #logo_link:hover{
+    color:#666;
+  }
+
+  #contact_header{
+    padding-top: 45px;
+  }
+
+  #aboutme_header{
+    color: blue;
   }
 
 
