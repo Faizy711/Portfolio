@@ -1,7 +1,7 @@
 # Portfolio Faizan Salman
 
 \
-<https://faizy711.github.io/Portfolio-AboutMe-ResumeAtmpt1/> \
+<https://faizy711.github.io/Portfolio/> \
 Version 1.0 \
 Deplyment Date: April 26, 2018
 
